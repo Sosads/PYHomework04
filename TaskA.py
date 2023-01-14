@@ -27,5 +27,17 @@ ratios = get_ratios(k)
 polynom1 = get_polynomial(k, ratios)
 print(polynom1)
 
-with open('33_Polynomial.txt', 'w') as data:
+with open('Polynomial.txt', 'w') as data:
     data.write(polynom1)
+
+
+# Второй многочлен для следующей задачи:
+
+k = randint(3, 6)
+
+ratios = get_ratios(k) 
+polynom2 = get_polynomial(k, ratios)
+print(polynom2)
+
+with open('Polynomial_2.txt', 'w') as data:
+    data.write(polynom2)
